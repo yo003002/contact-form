@@ -1,11 +1,23 @@
 # FashionablyLate Contact-form
 
-## 環境構築
+## Dockerビルド
 - git clone git@github.com:yo003002/contact-form.git
 - docker-compose up -d --build
 
-## laravel 8.x
+## Laravel環境構築
+- docker-compose exec php bash
+- composer install
+- cp .env.example .env  環境変数を変更
+- php artisan key:generate
+- php artisan migrate
+- php artisan db:seed
 
-##　ER図
+## 開発環境
 
-## URL
+## 使用技術（実行環境）
+- PHP 8.1.33
+- Laravel 8.83.8
+- MYSQL 11.8.3
+- nginx 1.21.1
+
+## ER図
